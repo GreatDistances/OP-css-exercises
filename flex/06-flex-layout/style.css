@@ -5,17 +5,48 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 img {
   width: 600px;
 }
 
+ul {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.left-links, .right-links {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(69, 69, 69)
+}
+
+a:visited {
+  color: rgb(69, 69, 69)
+}
+a:hover {
+  color: goldenrod;
+}
+
 button {
   font-family: Roboto, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px;
 }
 
 input {
@@ -24,4 +55,23 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header, .footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  /* fix alignment issues */
+}
+
+.footer {
+  background-color: #eeeeee;
 }
